@@ -42,11 +42,12 @@ export default function Home() {
         })
     }
     async function handleAddSuccess() {
-        dispatch ({
-            type: "success",
-            message: "Adding student",
-            position: "bottomR",
-        })
+       dispatch({
+        type: "success",
+        message: "Student Added!",
+        title: "Student Added",
+        position: "topR",
+       })
     }
     return (
         <div className={styles.container}>
